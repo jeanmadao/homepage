@@ -1,10 +1,8 @@
 const Home = () => {
   return (
-    <main>
-      <div>
-        <h1>Feilong</h1>
-      </div>
-    </main>
+    <>
+      <h2>Welcome!</h2>
+    </>
   );
 };
 

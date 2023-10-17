@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Navbar from "./Navbar";
 
 export const metadata: Metadata = {
   title: "Feilong Homepage",
@@ -12,7 +13,13 @@ interface Props {
 const RootLayout = ({ children }: Props) => {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header>
+          <Navbar />
+          <h1>FeiLong&apos;s Homepage</h1>
+        </header>
+        <main>{children}</main>
+      </body>
     </html>
   );
 };
