@@ -7,7 +7,7 @@ const About = () => {
         <p></p>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

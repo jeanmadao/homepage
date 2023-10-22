@@ -15,7 +15,7 @@ const Contact = () => {
         </address>
       </section>
     </>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact

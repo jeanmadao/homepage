@@ -1,0 +1,41 @@
+body {
+  background-color: #282828;
+  color: #ebdbb2;
+  margin: 70px;
+}
+
+.navbar {
+}
+
+.navbar > ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0px;
+}
+
+.navli {
+  padding-right: 10px;
+}
+
+.navlink {
+  color: #ebdbb2;
+  padding: 4px;
+}
+
+.navlink:hover {
+  background-color: #d65d0e;
+}
+
+.active {
+  color: #a89984;
+}
+
+ul {
+}
+
+main {
+  background-color: #3c3836;
+  padding: 3px 20px;
+}

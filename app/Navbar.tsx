@@ -1,18 +1,16 @@
-import Link from "next/link";
+import Navlink from './Navlink'
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
+        <Navlink href="/" name="Home" />
+        <Navlink href="/about" name="About" />
+        <Navlink href="/blog" name="Blog" />
+        <Navlink href="/contact" name="Contact" />
       </ul>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
