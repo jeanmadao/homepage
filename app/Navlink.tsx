@@ -12,12 +12,12 @@ const Navlink = ({ href, name }: Props) => {
   const pathname = usePathname()
   return (
     <li className="navli">
-      <Link
-        className={`navlink ${pathname === href ? 'active' : ''}`}
-        href={href}
-      >
-        {name}
-      </Link>
+      {pathname === href && <span className="navlink active">{name}</span>}
+      {pathname !== href && (
+        <Link className={`navlink inactive`} href={href}>
+          {name}
+        </Link>
+      )}
     </li>
   )
 }
