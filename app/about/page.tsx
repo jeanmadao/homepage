@@ -4,7 +4,7 @@ const About = () => {
       <h2>aboutMe();</h2>
 
       <section>
-        <p></p>
+        <h3>Get to know me better!</h3>
       </section>
     </>
   )

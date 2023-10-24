@@ -59,6 +59,7 @@ main a:hover {
 
 main {
   max-width: 600px;
+  width: 600px;
   background-color: #3c3836;
   padding: 40px 50px;
   margin: 0px 100px;

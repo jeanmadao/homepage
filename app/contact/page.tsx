@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
     <>
-      <h2>Let's talk!</h2>
+      <h2>contact();</h2>
 
       <section>
-        <p>Here's how you can contact me!</p>
+        <p>Here&apos;s how you can contact me!</p>
 
         <address>
           <a href="mailto:huynhjeanpierre@hotmail.com">
