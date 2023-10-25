@@ -14,18 +14,20 @@ const randomString = (length: number) => {
   return string
 }
 const HackerText = ({ text }: Props) => {
-  const [hackerText, setHackerText] = useState(randomString(text.length))
+  const [hackerText, setHackerText] = useState(' ')
   const [iterations, setIterations] = useState(0)
-  console.log(iterations)
+  console.log(hackerText)
   useEffect(() => {
-    setIterations(iterations + 1)
     if (iterations < 10) {
-      const id = setInterval(() => {
-        console.log(iterations)
+      const intervalId = setInterval(() => {
+        setIterations(iterations + 1)
         setHackerText(randomString(text.length))
-      }, 1000)
+      }, 30)
+      return () => clearInterval(intervalId)
+    } else {
+      setHackerText(text)
     }
-  }, [])
+  }, [iterations])
 
   return <>{hackerText}</>
 }
