@@ -2,7 +2,7 @@ import Navlink from './Navlink'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
+    <nav>
       <ul>
         <Navlink href="/" name="Home" />
         <Navlink href="/about" name="About" />

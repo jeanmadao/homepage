@@ -1,5 +1,3 @@
-import HackerText from '@/app/HackerText'
-
 interface Params {
   slug: string
 }
@@ -10,9 +8,7 @@ interface Props {
 const BlogPost = ({ params }: Props) => {
   return (
     <>
-      <h2>
-        <HackerText text={params.slug} />
-      </h2>
+      <h2>{params.slug}</h2>
     </>
   )
 }

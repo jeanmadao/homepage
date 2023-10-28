@@ -3,7 +3,6 @@ import Navbar from './Navbar'
 import './global.css'
 import { Fira_Code, Roboto } from 'next/font/google'
 import Link from 'next/link'
-import HackerText from './HackerText'
 
 export const metadata: Metadata = {
   title: 'Feilong Homepage',
@@ -33,14 +32,14 @@ const RootLayout = ({ children }: Props) => {
       <body className={firaCode.variable + ' ' + roboto.variable}>
         <header>
           <Link href="/">
-            <h1>
-              <HackerText text="FeiLong = () =&gt;" />
-            </h1>
+            <h1>FeiLong = () =&gt;</h1>
           </Link>
           <Navbar />
         </header>
         <main>{children}</main>
-        <footer>© {currentYear} Jean Huynh. All Rights Reserved.</footer>
+        <footer>
+          <small>© {currentYear} Jean Huynh. All Rights Reserved.</small>
+        </footer>
       </body>
     </html>
   )
