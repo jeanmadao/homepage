@@ -1,7 +1,11 @@
+import HackerText from '../HackerText'
+
 const Contact = () => {
   return (
     <>
-      <h2>contact();</h2>
+      <h2>
+        <HackerText text="Contact();" />
+      </h2>
 
       <section>
         <p>Here&apos;s how you can contact me!</p>

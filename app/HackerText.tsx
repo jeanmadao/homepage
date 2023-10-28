@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 interface Props {
   text: string
+  iterationReveal?: number
 }
 
 const randomString = (length: number) => {
@@ -13,21 +14,33 @@ const randomString = (length: number) => {
   }
   return string
 }
-const HackerText = ({ text }: Props) => {
-  const [hackerText, setHackerText] = useState(' ')
+const HackerText = ({ text, iterationReveal = 10 }: Props) => {
+  const [hackerText, setHackerText] = useState(randomString(text.length))
   const [iterations, setIterations] = useState(0)
   console.log(hackerText)
   useEffect(() => {
-    if (iterations < 10) {
+    if (iterations < iterationReveal) {
       const intervalId = setInterval(() => {
         setIterations(iterations + 1)
         setHackerText(randomString(text.length))
       }, 30)
       return () => clearInterval(intervalId)
-    } else {
-      setHackerText(text)
+    } else if (Math.floor(iterations) - iterationReveal <= text.length) {
+      const intervalId = setInterval(() => {
+        setIterations(iterations + 0.4)
+        setHackerText(
+          text
+            .slice(0, Math.floor(iterations) - iterationReveal)
+            .concat(
+              randomString(
+                text.length - (Math.floor(iterations) - iterationReveal)
+              )
+            )
+        )
+      }, 30)
+      return () => clearInterval(intervalId)
     }
-  }, [iterations])
+  }, [iterations, iterationReveal, text])
 
   return <>{hackerText}</>
 }

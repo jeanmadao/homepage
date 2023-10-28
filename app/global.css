@@ -4,27 +4,33 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: var(--font-roboto);
 }
 
 header {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
+  border-bottom: solid;
+  width: 80vw;
 }
 
-.navbar {
-  margin-left: 100px;
+header a {
+  text-decoration: none;
+  color: #ebdbb2;
 }
 
 .navbar > ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   padding: 0px;
 }
 
 .navli {
-  padding: 0px 10px;
+  padding: 10px;
 }
 
 .navlink {
@@ -32,7 +38,7 @@ header {
   padding: 4px;
   font-weight: bold;
   text-decoration: none;
-  background-color: #282828;
+  transition: all 0.5s ease-out;
 }
 
 .navlink.inactive:hover {
@@ -45,11 +51,22 @@ header {
   text-decoration: underline;
 }
 
+main {
+  background-color: #3c3836;
+  padding: 40px 50px;
+  margin: 0px 80px;
+  border-radius: 20px;
+  width: 80vw;
+  max-width: 600px;
+  margin: 30px 0px;
+}
+
 main a {
   color: #282828;
   background-color: #ebdbb2;
   text-decoration: none;
   font-style: normal;
+  padding: 0px 3px;
 }
 
 main a:hover {
@@ -57,11 +74,17 @@ main a:hover {
   background-color: #d65d0e;
 }
 
-main {
-  background-color: #3c3836;
-  padding: 40px 50px;
-  margin: 0px 100px;
-  border-radius: 20px;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top: solid;
+
+  padding: 40px;
+
+  width: 80vw;
+  max-width: 600px;
 }
 
 h1,
@@ -80,18 +103,15 @@ h2 {
   padding: 10px 30px;
 }
 
-header a {
-  text-decoration: none;
-  color: #ebdbb2;
-}
-
 h1 {
   padding: 10px 30px;
   border: solid;
   border-radius: 20px;
+  transition: all 0.5s ease-out;
 }
 
 h1:hover {
   color: #282828;
   background-color: #ebdbb2;
+  border-color: #ebdbb2;
 }
