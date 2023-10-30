@@ -32,7 +32,19 @@ const RootLayout = ({ children }: Props) => {
       <body className={firaCode.variable + ' ' + roboto.variable}>
         <header>
           <Link href="/">
-            <h1>FeiLong = () =&gt;</h1>
+            <h1>
+              <span className="red">const </span>
+              <span className="green"> Project </span>
+              <span className="orange"> =</span>
+              <br />
+              <span className="orange">(</span>
+              <span className="blue">FeiLong</span>
+              <span className="orange">)</span>
+              <span className="orange"> =&gt; </span>
+              <span className="orange"> &#123;</span>
+              <span className="blink">&nbsp;</span>
+              <span className="orange">&#125;</span>
+            </h1>
           </Link>
           <Navbar />
         </header>

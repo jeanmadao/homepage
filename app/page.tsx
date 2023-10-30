@@ -15,46 +15,50 @@ const Home = () => {
 
       <section>
         <h3>Skills</h3>
+
         <table>
-          <tr>
-            <th scope="col">Frontend</th>
-            <th scope="col">Backend</th>
-            <th scope="col">Tools</th>
-            <th scope="col">Other Languages</th>
-          </tr>
-          <tr>
-            <td>Typescript</td>
-            <td>RESTful API</td>
-            <td>MongoDB</td>
-            <td>Python</td>
-          </tr>
-          <tr>
-            <td>HTML</td>
-            <td>Graphql</td>
-            <td>NextJS</td>
-            <td>C</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>Express</td>
-            <td>Git</td>
-            <td>Kotlin</td>
-          </tr>
-          <tr>
-            <td>React</td>
-            <td>Mongoose</td>
-            <td>Linux</td>
-          </tr>
-          <tr>
-            <td>Redux</td>
-            <td>Supertest</td>
-          </tr>
-          <tr>
-            <td>React Query</td>
-          </tr>
-          <tr>
-            <td>Cypress</td>
-          </tr>
+          <caption>Skills</caption>
+          <thead>
+            <tr>
+              <th>Frontend</th>
+              <th>Backend</th>
+              <th>Tools</th>
+              <th>Others</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Typescript</td>
+              <td>Express</td>
+              <td>Mongoose</td>
+              <td>Python</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>GraphQL</td>
+              <td>Git</td>
+              <td>C</td>
+            </tr>
+            <tr>
+              <td>React Query</td>
+              <td>Supertest</td>
+              <td>Linux</td>
+              <td>Kotlin</td>
+            </tr>
+            <tr>
+              <td>Redux</td>
+              <td>Mongoose</td>
+            </tr>
+            <tr>
+              <td>Cypress</td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+            </tr>
+            <tr>
+              <td>CSS</td>
+            </tr>
+          </tbody>
         </table>
       </section>
     </>

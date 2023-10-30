@@ -1,6 +1,32 @@
+:root {
+  --bg: #282828;
+  --bg1: #3c3836;
+  --fg: #ebdbb2;
+  --red: #cc241d;
+  --orange: #d65d0e;
+  --green: #98971a;
+  --blue: #458588;
+}
+
+.red {
+  color: var(--red);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.green {
+  color: var(--green);
+}
+
+.blue {
+  color: var(--blue);
+}
+
 body {
-  background-color: #282828;
-  color: #ebdbb2;
+  background-color: var(--bg);
+  color: var(--fg);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,15 +36,44 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   border-bottom: solid;
   width: 80vw;
-  max-width: 800px;
+  max-width: 700px;
 }
 
 header a {
   text-decoration: none;
-  color: #ebdbb2;
+  color: var(--fg);
+}
+
+h1 {
+  padding: 10px 30px;
+  border: solid;
+  border-radius: 20px;
+  transition: all 0.5s ease-out;
+}
+
+h1:hover {
+  color: var(--bg);
+  background-color: var(--fg);
+  border-color: var(--fg);
+}
+
+h1:hover > .blink {
+  background-color: var(--bg);
+}
+
+.blink {
+  background-color: var(--fg);
+  animation: blink 1s infinite;
+  animation-timing-function: steps(1, jump-start);
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 nav {
@@ -39,7 +94,7 @@ nav > ul {
 }
 
 .navlink {
-  color: #ebdbb2;
+  color: var(--fg);
   padding: 4px;
   font-weight: bold;
   text-decoration: none;
@@ -47,17 +102,17 @@ nav > ul {
 }
 
 .navlink.inactive:hover {
-  background-color: #d65d0e;
+  background-color: var(--orange);
 }
 
 .navlink.active {
-  color: #282828;
-  background-color: #ebdbb2;
+  color: var(--bg);
+  background-color: var(--fg);
   text-decoration: underline;
 }
 
 main {
-  background-color: #3c3836;
+  background-color: var(--bg1);
   padding: 40px 50px;
   margin: 0px 80px;
   border-radius: 20px;
@@ -67,16 +122,16 @@ main {
 }
 
 main a {
-  color: #282828;
-  background-color: #ebdbb2;
+  color: var(--bg);
+  background-color: var(--fg);
   text-decoration: none;
   font-style: normal;
   padding: 0px 3px;
 }
 
 main a:hover {
-  color: #ebdbb2;
-  background-color: #d65d0e;
+  color: var(--fg);
+  background-color: var(--orange);
 }
 
 footer {
@@ -102,21 +157,28 @@ h6 {
 }
 
 h2 {
-  color: #282828;
-  background-color: #ebdbb2;
+  color: var(--bg);
+  background-color: var(--fg);
   margin: 0px -50px 50px -50px;
   padding: 10px 30px;
 }
 
-h1 {
-  padding: 10px 30px;
-  border: solid;
-  border-radius: 20px;
-  transition: all 0.5s ease-out;
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid;
 }
 
-h1:hover {
-  color: #282828;
-  background-color: #ebdbb2;
-  border-color: #ebdbb2;
+th,
+td {
+  padding: 20px;
+}
+
+th {
+  border: 3px solid;
+}
+
+td {
+  border: 1px solid;
 }
