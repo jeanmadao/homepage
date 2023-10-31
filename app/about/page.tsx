@@ -20,7 +20,7 @@ const About = () => {
           <a href="https://fullstackopen.com/en/">Full Stack Open course</a> for
           all my foundamental knowledge of web development. I really am thankful
           for all those free and open source resources available, the internet
-          is truly a valueable place to learn really anything.
+          is truly a valueable and accessible place to learn really anything.
         </p>
       </section>
     </>

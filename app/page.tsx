@@ -14,7 +14,7 @@ const Home = () => {
             <p>
               My name is Jean Huynh, a self-taught fullstack developer. I love
               scratching my head solving problems, especially when it comes to
-              code. Always interested and in the search of new technology and
+              code. Always interested and in the search of new technologies and
               frameworks to learn.
             </p>
             <p>
