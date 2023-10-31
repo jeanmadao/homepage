@@ -1,20 +1,40 @@
+import Link from "next/link"
+import profilePic from "../public/F3aWdFdaQAA-PKs.jpg"
+import Image from "next/image"
+
 const Home = () => {
   return (
     <>
       <h2>Welcome();</h2>
 
       <section>
-        <h3>Looking for me ?</h3>
-        <p>
-          My name is Jean Huynh, a self-taught fullstack developer. I love
-          scratching my head solving problems, especially when it comes to code.
-          Always interested and in the search of new technology and frameworks
-          to learn.
-        </p>
-      </section>
-
-      <section>
-        <h3>Skills</h3>
+        <div className="introduction">
+          <div className="introduction-text">
+            <h3>Let me introduce myself!</h3>
+            <p>
+              My name is Jean Huynh, a self-taught fullstack developer. I love
+              scratching my head solving problems, especially when it comes to
+              code. Always interested and in the search of new technology and
+              frameworks to learn.
+            </p>
+            <p>
+              <Link href="/contact">Let&apos;s have a talk!</Link>
+            </p>
+          </div>
+          <aside>
+            <figure>
+              <Image
+                src={profilePic}
+                alt="Cat Avatar"
+                className="profile-pic"
+                placeholder="blur"
+              />
+              <figcaption>
+                source: <a href="https://x.com/nitorisasami">@nitorisasami</a>
+              </figcaption>
+            </figure>
+          </aside>
+        </div>
 
         <table>
           <caption>Skills</caption>
@@ -48,15 +68,26 @@ const Home = () => {
             <tr>
               <td>Redux</td>
               <td>Mongoose</td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>Cypress</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>HTML</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>CSS</td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

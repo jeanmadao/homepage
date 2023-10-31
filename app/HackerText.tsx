@@ -1,6 +1,6 @@
-'use client'
+"use client"
 
-import { useEffect, useState } from 'react'
+import { useEffect, useState } from "react"
 
 interface Props {
   text: string
@@ -8,7 +8,7 @@ interface Props {
 }
 
 const randomString = (length: number) => {
-  let string = ''
+  let string = ""
   for (let i = 0; i < length; i++) {
     string = string + String.fromCharCode(32 + Math.floor(Math.random() * 95))
   }

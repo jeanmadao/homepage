@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
-import Navbar from './Navbar'
-import './global.css'
-import { Fira_Code, Roboto } from 'next/font/google'
-import Link from 'next/link'
+import type { Metadata } from "next"
+import Navbar from "./Navbar"
+import "./global.css"
+import { Fira_Code, Roboto } from "next/font/google"
+import Link from "next/link"
 
 export const metadata: Metadata = {
-  title: 'Feilong Homepage',
-  description: 'Welcome to my homepage!',
+  title: "Feilong Homepage",
+  description: "Welcome to my homepage!",
 }
 
 interface Props {
@@ -14,14 +14,14 @@ interface Props {
 }
 
 const firaCode = Fira_Code({
-  variable: '--font-fira-code',
-  subsets: ['latin'],
+  variable: "--font-fira-code",
+  subsets: ["latin"],
 })
 
 const roboto = Roboto({
-  variable: '--font-roboto',
-  weight: '400',
-  subsets: ['latin'],
+  variable: "--font-roboto",
+  weight: "400",
+  subsets: ["latin"],
 })
 
 const RootLayout = ({ children }: Props) => {
@@ -29,7 +29,7 @@ const RootLayout = ({ children }: Props) => {
 
   return (
     <html lang="en">
-      <body className={firaCode.variable + ' ' + roboto.variable}>
+      <body className={firaCode.variable + " " + roboto.variable}>
         <header>
           <Link href="/">
             <h1>

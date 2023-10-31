@@ -9,14 +9,19 @@ const About = () => {
 
       <section>
         <h3>Get to know me better!</h3>
+        <p>
+          My full name is Jean Pierre Huynh, I&apos;m {age} years old, and I
+          live in Brussels, Belgium.
+        </p>
 
         <p>
-          My full name is Jean Pierre Huynh, I'm {age} years old, and I live in
-          Brussels, Belgium. I have a girlfriend, her name is Xin Huang, she
-          very hot, and she crazy brooooooooo. Like me man. Woooooh.
-          Woaaaaaaaaah (with mario voice).
+          I mostly learned all my programming and development knowledge on the
+          Internet. I owe the{" "}
+          <a href="https://fullstackopen.com/en/">Full Stack Open course</a> for
+          all my foundamental knowledge of web development. I really am thankful
+          for all those free and open source resources available, the internet
+          is truly a valueable place to learn really anything.
         </p>
-        <p></p>
       </section>
     </>
   )

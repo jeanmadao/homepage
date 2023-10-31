@@ -8,22 +8,6 @@
   --blue: #458588;
 }
 
-.red {
-  color: var(--red);
-}
-
-.orange {
-  color: var(--orange);
-}
-
-.green {
-  color: var(--green);
-}
-
-.blue {
-  color: var(--blue);
-}
-
 body {
   background-color: var(--bg);
   color: var(--fg);
@@ -47,22 +31,42 @@ header a {
   color: var(--fg);
 }
 
-h1 {
-  padding: 10px 30px;
-  border: solid;
-  border-radius: 20px;
-  transition: all 0.5s ease-out;
+/* h1 { */
+/*   padding: 10px 30px; */
+/*   border: solid; */
+/*   border-radius: 20px; */
+/*   transition: all 0.5s ease-out; */
+/* } */
+
+h1:hover > .red {
+  color: var(--red);
+  transition: all 0.2s ease-out;
 }
 
-h1:hover {
-  color: var(--bg);
-  background-color: var(--fg);
-  border-color: var(--fg);
+h1:hover > .orange {
+  color: var(--orange);
+  transition: all 0.2s ease-out;
 }
 
-h1:hover > .blink {
-  background-color: var(--bg);
+h1:hover > .green {
+  color: var(--green);
+  transition: all 0.2s ease-out;
 }
+
+h1:hover > .blue {
+  color: var(--blue);
+  transition: all 0.2s ease-out;
+}
+
+/* h1:hover { */
+/*   color: var(--bg); */
+/*   background-color: var(--fg); */
+/*   border-color: var(--fg); */
+/* } */
+/**/
+/* h1:hover > .blink { */
+/*   background-color: var(--bg); */
+/* } */
 
 .blink {
   background-color: var(--fg);
@@ -98,7 +102,7 @@ nav > ul {
   padding: 4px;
   font-weight: bold;
   text-decoration: none;
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .navlink.inactive:hover {
@@ -175,10 +179,62 @@ td {
   padding: 20px;
 }
 
+caption {
+  border: 3px solid;
+  padding: 10px;
+}
+
 th {
   border: 3px solid;
+  background-color: var(--fg);
+  border-color: var(--fg);
+  color: var(--bg);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg);
 }
 
 td {
+  border-right: 1px solid;
+}
+
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: var(--bg);
+  padding: 20px;
+  margin: 50px 0px;
+  align-items: center;
+}
+
+.introduction-text {
+  margin: 20px;
+}
+
+p {
+  text-align: justify;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.profile-pic {
+  height: auto;
+  max-width: 175px;
+  border-radius: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  margin: 10px;
+}
+
+figcaption {
   border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
 }
