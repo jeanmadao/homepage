@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+<h1>{{ post.title }}</h1>
+<div id="publication-date">{{ post.date }}</div>
+<div id="content">
+  {{ post.html|safe }}
+</div>
+
+{% endblock %}

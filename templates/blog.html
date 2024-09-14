@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>My blog!</h1>
+
+<div id="content">
+
+  {% for post in posts %}
+    <small>{{ post.date }}</small>
+    <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"
+    >{{ post.title }}</a>
+  {% endfor %}
+
+</div>
+
+{% endblock %}

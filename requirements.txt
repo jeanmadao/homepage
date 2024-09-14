@@ -1,1 +1,2 @@
 Flask==3.0.3
+Flask-FlatPages==0.8.2

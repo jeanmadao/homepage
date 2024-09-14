@@ -1,0 +1,34 @@
+body {
+  font-family: FiraCode Nerd Font Mono;
+  margin: 0px;
+  background-color: $dark0;
+  display: flex;
+  justify-content: center;
+}
+
+#page {
+  max-width: 800px;
+  border-style: solid;
+  padding: 0px 10px;
+  border-width: 0px 2px;
+  border-color: $neutral_green;
+}
+
+
+@media only screen and (min-width: 768px) {
+  #page {
+    min-width: 800px;
+  }
+}
+
+h1, h2, h3 {
+  margin: unset;
+}
+
+h2 {
+  color: $bright_green;
+}
+
+h3 {
+  color: $bright_orange;
+}

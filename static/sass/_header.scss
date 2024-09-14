@@ -1,0 +1,12 @@
+#banner {
+  min-height: 5rem;
+  background-color: $dark1;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+#banner code {
+  color: $light1;
+  font-size: 2rem;
+}

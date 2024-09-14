@@ -1,0 +1,69 @@
+#card {
+  background-color: $dark0;
+  border-radius: 20px;
+  margin: 20px;
+  aspect-ratio: 2;
+  display: flex;
+  padding: 20px;
+  font-family: FiraCode Nerd Font Mono;
+}
+
+#card #info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+#card #profile {
+  flex: 1;
+}
+
+#card #info {
+  padding: 1rem;
+}
+
+#card #name {
+}
+
+#card #description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#card #description p {
+  font-size: 0.9rem;
+}
+
+#card hr {
+  margin: 1rem;
+}
+
+figure {
+  margin: unset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+figcaption {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#card #photo {
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 5px;
+  border-color: $light1;
+  aspect-ratio: 1;
+  background-image: url("../assets/profile.png");
+  background-position: center;
+  background-size: 200px;
+  min-width: 150px;
+}

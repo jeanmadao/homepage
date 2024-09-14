@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <script src="/static/js/htmx.min.js"></script>
+    <title>feilong</title>
+  </head>
+  <body hx-boost="true">
+    <div id="page">
+      {% include 'header.html' %}
+      <main>
+        {% block content %}{% endblock %}
+      </main>
+      <hr>
+      {% include 'footer.html' %}
+    </div>
+  </body>
+</html>
+

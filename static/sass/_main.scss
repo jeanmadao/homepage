@@ -1,0 +1,30 @@
+main {
+  background-color: $dark1;
+  padding: 2rem 0rem;
+  color: $light1;
+}
+
+main h1 {
+  margin-bottom: 1rem;
+  padding: 0rem 2rem;
+  background-color: $light1;
+  color: $dark0;
+}
+
+main a {
+  color: $bright_blue;
+  padding: 0.2rem;
+  text-decoration: unset;
+  font-weight: bold;
+}
+
+main a:hover {
+  color: $light1;
+  background-color: $bright_blue;
+}
+
+#content {
+  padding: 1rem 2rem;
+  text-align: justify;
+  font-family: Roboto;
+}
