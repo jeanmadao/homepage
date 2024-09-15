@@ -10,9 +10,9 @@ body {
   width: 100vw;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 768px) {
   #page {
-    width: 800px;
+    max-width: 768px;
   }
 }
 
