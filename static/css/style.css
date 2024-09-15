@@ -1,5 +1,47 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  src: url(../fonts/Roboto-Italic.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: normal;
+  src: url(../fonts/Roboto-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  src: url(../fonts/Roboto-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/Roboto-BoldItalic.ttf) format("ttf");
+}
+@font-face {
+  font-family: "FantasqueSansM Nerd Font";
+  font-style: italic;
+  src: url(../fonts/FantasqueSansMNerdFontMono-Italic.ttf) format("ttf");
+}
+@font-face {
+  font-family: "FantasqueSansM Nerd Font";
+  font-weight: normal;
+  src: url(../fonts/FantasqueSansMNerdFontMono-Regular.ttf) format("ttf");
+}
+@font-face {
+  font-family: "FantasqueSansM Nerd Font";
+  font-weight: bold;
+  src: url(../fonts/FantasqueSansMNerdFontMono-Bold.ttf) format("ttf");
+}
+@font-face {
+  font-family: "FantasqueSansM Nerd Font";
+  font-weight: bold;
+  font-style: italic;
+  src: url(../fonts/FantasqueSansMNerdFontMono-BoldItalic.ttf) format("ttf");
+}
 body {
-  font-family: FiraCode Nerd Font Mono;
+  font-family: FantasqueSansM Nerd Font Mono;
   margin: 0px;
   background-color: #282828;
   display: flex;
@@ -119,7 +161,7 @@ main a:hover {
   aspect-ratio: 2;
   display: flex;
   padding: 20px;
-  font-family: FiraCode Nerd Font Mono;
+  font-family: FantasqueSansM Nerd Font Mono;
 }
 
 #card #info {
