@@ -2,8 +2,11 @@
 
 {% block content %}
 
-<h1>{{ post.title }}</h1>
-<div id="publication-date">{{ post.date }}</div>
+<h1>Blog</h1>
+<div id="publication-info">
+  <h2>{{ post.title }}</h2>
+  <div>{{ post.date }}</div>
+</div>
 <div id="content">
   {{ post.html|safe }}
 </div>

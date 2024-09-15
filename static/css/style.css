@@ -70,6 +70,10 @@ h2 {
 }
 
 h3 {
+  color: #83a598;
+}
+
+h4 {
   color: #fe8019;
 }
 
@@ -232,10 +236,14 @@ figcaption {
   min-width: 150px;
 }
 
-#publication-date {
+#publication-info {
   background-color: #1d2021;
   padding: 0.5rem 1rem;
   font-weight: bold;
+}
+
+pre {
+  padding: 1rem;
 }
 
 footer {
