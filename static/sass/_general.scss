@@ -7,17 +7,12 @@ body {
 }
 
 #page {
-  max-width: 800px;
-  border-style: solid;
-  padding: 0px 10px;
-  border-width: 0px 2px;
-  border-color: $neutral_green;
+  width: 100vh;
 }
-
 
 @media only screen and (min-width: 768px) {
   #page {
-    min-width: 800px;
+    width: 768px;
   }
 }
 
@@ -31,4 +26,8 @@ h2 {
 
 h3 {
   color: $bright_orange;
+}
+
+hr {
+  color: $bright_green;
 }

@@ -49,16 +49,12 @@ body {
 }
 
 #page {
-  max-width: 800px;
-  border-style: solid;
-  padding: 0px 10px;
-  border-width: 0px 2px;
-  border-color: #98971a;
+  width: 100vh;
 }
 
 @media only screen and (min-width: 768px) {
   #page {
-    min-width: 800px;
+    width: 768px;
   }
 }
 h1, h2, h3 {
@@ -71,6 +67,10 @@ h2 {
 
 h3 {
   color: #fe8019;
+}
+
+hr {
+  color: #b8bb26;
 }
 
 nav {
@@ -158,7 +158,6 @@ main a:hover {
   background-color: #282828;
   border-radius: 20px;
   margin: 20px;
-  aspect-ratio: 2;
   display: flex;
   padding: 20px;
   font-family: FantasqueSansM Nerd Font Mono;
@@ -183,10 +182,6 @@ main a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#card #description p {
-  font-size: 0.9rem;
 }
 
 #card hr {
