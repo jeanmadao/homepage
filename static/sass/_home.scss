@@ -35,6 +35,19 @@
   margin: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  #card {
+    flex-direction: column;
+    text-align: justify;
+  }
+  #card #info {
+    order: 2;
+  }
+  #card #profile {
+    order: 1;
+  }
+}
+
 figure {
   margin: unset;
   display: flex;

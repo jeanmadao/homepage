@@ -7,12 +7,12 @@ body {
 }
 
 #page {
-  width: 100vw;
+  max-width: 768px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   #page {
-    max-width: 768px;
+    width: 100vw;
   }
 }
 
