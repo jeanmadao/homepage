@@ -5,10 +5,16 @@
 <h1>Blog</h1>
 <div id="publication-info">
   <h2>{{ post.title }}</h2>
-  <div>{{ post.date }}</div>
+  <div>Original publication: {{ post.date }}</div>
 </div>
 <div id="content">
   {{ post.html|safe }}
+  <hr>
+  <small>
+    If there is any mistake to report or you have any suggestion, feel
+    free to open a PR in the
+    <a href="https://github.com/jeanmadao/homepage" target="_blank">repository</a>.
+  </small>
 </div>
 
 {% endblock %}

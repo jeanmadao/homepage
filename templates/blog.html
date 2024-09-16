@@ -5,14 +5,18 @@
 
 <div id="content">
 
+  <ul>
   {% for post in posts %}
-    <small>{{ post.date }}</small>
-    <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"
-       hx-target="main"
-       hx-select="main"
-       hx-swap="outerHTML show:window:top"
-    >{{ post.title }}</a>
+    <li>
+      <small>{{ post.date }}</small>
+      <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"
+         hx-target="main"
+         hx-select="main"
+         hx-swap="outerHTML show:window:top"
+      >{{ post.title }}</a>
+    </li>
   {% endfor %}
+  </ul>
 
 </div>
 
