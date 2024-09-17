@@ -1,5 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 from flask_flatpages import FlatPages, pygments_style_defs
+from flask import send_from_directory
+import os
+
 
 POST_DIR = "posts"
 FLATPAGES_EXTENSION = '.md'
@@ -30,3 +33,9 @@ def post(name):
 @app.route('/pygments.css')
 def pygments_css():
     return pygments_style_defs('gruvbox-dark'), 200, {'Content-Type': 'text/css'}
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
