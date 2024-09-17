@@ -110,18 +110,12 @@ nav a {
   font-weight: bold;
   padding: 0.3rem;
   color: unset;
-  background-color: unset;
   text-decoration: unset;
 }
 
 nav a:hover {
   background-color: #ebdbb2;
   color: #282828;
-}
-
-nav a:active {
-  background-color: unset;
-  color: unset;
 }
 
 #banner {
@@ -152,7 +146,6 @@ main h1 {
 
 main a {
   color: #83a598;
-  background-color: unset;
   padding: 0.2rem;
   text-decoration: unset;
   font-weight: bold;
@@ -161,11 +154,6 @@ main a {
 main a:hover {
   color: #ebdbb2;
   background-color: #83a598;
-}
-
-main a:active {
-  color: #83a598;
-  background-color: unset;
 }
 
 #content {
@@ -268,7 +256,6 @@ footer {
 }
 
 footer a {
-  background-color: unset;
   color: #ebdbb2;
 }
 
@@ -277,22 +264,14 @@ footer a:hover {
   color: #282828;
 }
 
-footer a:active {
-  background-color: unset;
-  color: #ebdbb2;
-}
-
 #socials a {
+  background-color: unset;
   text-decoration: unset;
   font-size: 2rem;
 }
 
 #socials a:hover {
   color: #fbf1c7;
-}
-
-#socials a:active {
-  color: unset;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -7,7 +7,6 @@ footer {
 }
 
 footer a {
-  background-color: unset;
   color: $light1;
 }
 
@@ -16,19 +15,11 @@ footer a:hover {
   color: $dark0;
 }
 
-footer a:active {
-  background-color: unset;
-  color: $light1;
-}
-
 #socials a {
+  background-color: unset;
   text-decoration: unset;
   font-size: 2rem;
 }
 #socials a:hover {
   color: $light0;
-}
-
-#socials a:active {
-  color: unset;
 }

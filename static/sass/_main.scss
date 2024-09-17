@@ -13,7 +13,6 @@ main h1 {
 
 main a {
   color: $bright_blue;
-  background-color: unset;
   padding: 0.2rem;
   text-decoration: unset;
   font-weight: bold;
@@ -22,11 +21,6 @@ main a {
 main a:hover {
   color: $light1;
   background-color: $bright_blue;
-}
-
-main a:active {
-  color: $bright_blue;
-  background-color: unset;
 }
 
 #content {
