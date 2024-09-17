@@ -3,7 +3,10 @@
 > Keep in mind this website is still under construction!
 
 ## Introduction
-This my personal website. It is built with Flask and HTMX.
+This my personal website. It is built with
+[Flask](https://flask.palletsprojects.com/en/3.0.x/) and
+[htmx](https://htmx.org/). This website theme uses the
+[gruvbox](https://github.com/morhetz/gruvbox) colorscheme.
 
 ## Dependencies
 It is listed in the `requirements.txt`.
