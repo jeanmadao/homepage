@@ -110,6 +110,7 @@ nav a {
   font-weight: bold;
   padding: 0.3rem;
   color: unset;
+  background-color: unset;
   text-decoration: unset;
 }
 
@@ -146,6 +147,7 @@ main h1 {
 
 main a {
   color: #83a598;
+  background-color: unset;
   padding: 0.2rem;
   text-decoration: unset;
   font-weight: bold;
@@ -256,6 +258,7 @@ footer {
 }
 
 footer a {
+  background-color: unset;
   color: #ebdbb2;
 }
 
@@ -265,7 +268,6 @@ footer a:hover {
 }
 
 #socials a {
-  background-color: unset;
   text-decoration: unset;
   font-size: 2rem;
 }
