@@ -27,3 +27,7 @@ pip install -r requirements.txt #install the dependencies with PIP
 ```sh
 flask --app app.py --debug run #run flask in debug mode
 ```
+
+## Visit the website!
+You can visit the website at [https://refeilong.com/](https://refeilong.com/)
+
