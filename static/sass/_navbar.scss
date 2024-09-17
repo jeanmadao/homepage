@@ -35,3 +35,8 @@ nav a:hover {
   background-color: $light1;
   color: $dark0;
 }
+
+nav a:active {
+  background-color: unset;
+  color: unset;
+}

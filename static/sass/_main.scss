@@ -24,6 +24,11 @@ main a:hover {
   background-color: $bright_blue;
 }
 
+main a:active {
+  color: $bright_blue;
+  background-color: unset;
+}
+
 #content {
   padding: 1rem 2rem;
   text-align: justify;
