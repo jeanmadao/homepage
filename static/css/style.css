@@ -144,16 +144,39 @@ main h1 {
   color: #282828;
 }
 
-main a {
-  color: #83a598;
+main h3, h4, h4 {
   padding: 0.2rem;
-  text-decoration: unset;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+main a {
+  color: #ebdbb2;
   font-weight: bold;
 }
 
 main a:hover {
   color: #ebdbb2;
-  background-color: #83a598;
+  background-color: #fe8019;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main figure {
+  margin: 1rem 0rem;
+  padding: 0.3rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #282828;
+}
+
+main figcaption {
+  background: #32302f;
+  padding: 0.2rem;
+  font-style: italic;
 }
 
 #content {
@@ -208,7 +231,7 @@ main a:hover {
     order: 1;
   }
 }
-figure {
+#card figure {
   margin: unset;
   display: flex;
   flex-direction: column;
@@ -217,7 +240,7 @@ figure {
   gap: 1rem;
 }
 
-figcaption {
+#card figcaption {
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;

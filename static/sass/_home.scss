@@ -48,7 +48,7 @@
   }
 }
 
-figure {
+#card figure {
   margin: unset;
   display: flex;
   flex-direction: column;
@@ -57,7 +57,7 @@ figure {
   gap: 1rem;
 }
 
-figcaption {
+#card figcaption {
   border-style: solid;
   border-width: 1px;
   border-radius: 5px;

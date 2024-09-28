@@ -11,16 +11,40 @@ main h1 {
   color: $dark0;
 }
 
-main a {
-  color: $bright_blue;
+main h3, h4, h4 {
   padding: 0.2rem;
-  text-decoration: unset;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+}
+
+main a {
+  // color: $bright_orange;
+  color: $light1;
   font-weight: bold;
 }
 
 main a:hover {
   color: $light1;
-  background-color: $bright_blue;
+  background-color: $bright_orange;
+}
+
+main img {
+  max-width: 100%;
+}
+
+main figure {
+  margin: 1rem 0rem;
+  padding: 0.3rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $dark0;
+}
+
+main figcaption {
+  background: $dark0_soft;
+  padding: 0.2rem;
+  font-style: italic;
 }
 
 #content {
