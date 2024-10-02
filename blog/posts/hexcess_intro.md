@@ -4,6 +4,8 @@ date: 2024-09-28
 
 ### Introduction
 
+EDIT: Hex editing is now implemented!
+
 Let me introduce my new baby to you, hexcess! It's a TUI hex viewer, and soon
 editor as I'm still working on it! The edit feature will (probably) be
 available next week! It was initially a project idea I had when I was
