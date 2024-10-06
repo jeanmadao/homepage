@@ -11,7 +11,7 @@ main h1 {
   color: $dark0;
 }
 
-main h3, h4, h4 {
+main h3, h4 {
   padding: 0.2rem;
   border-style: solid;
   border-width: 0;
@@ -48,7 +48,14 @@ main figcaption {
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 2rem;
   text-align: justify;
   font-family: Roboto;
+  gap: 1rem;
+}
+
+#content p {
+  margin: unset;
 }

@@ -8,3 +8,18 @@
   padding: 1rem;
   overflow: scroll;
 }
+
+iframe {
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+
+#content {
+  hr, figure, ol, ul {
+    margin: unset;
+  }
+
+  ol, ul {
+    padding-left: 1rem;
+  }
+}

@@ -5,10 +5,11 @@
 
 <div id="content">
 
-  <ul>
+  <ul id="posts">
   {% for post in posts %}
     <li>
       <small>{{ post.date }}</small>
+      <hr>
       <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"
          hx-target="main"
          hx-select="main"

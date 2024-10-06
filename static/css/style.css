@@ -61,7 +61,7 @@ body {
     width: 100vw;
   }
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   margin: unset;
 }
 
@@ -79,6 +79,10 @@ h4 {
 
 hr {
   color: #b8bb26;
+}
+
+ol, ul {
+  padding-left: 1rem;
 }
 
 nav {
@@ -144,7 +148,7 @@ main h1 {
   color: #282828;
 }
 
-main h3, h4, h4 {
+main h3, h4 {
   padding: 0.2rem;
   border-style: solid;
   border-width: 0;
@@ -181,9 +185,16 @@ main figcaption {
 }
 
 #content {
+  display: flex;
+  flex-direction: column;
   padding: 1rem 2rem;
   text-align: justify;
   font-family: Roboto;
+  gap: 1rem;
+}
+
+#content p {
+  margin: unset;
 }
 
 #card {
@@ -260,6 +271,11 @@ main figcaption {
   min-width: 150px;
 }
 
+#posts li {
+  display: flex;
+  gap: 1rem;
+}
+
 #publication-info {
   background-color: #504945;
   padding: 0.5rem 1rem;
@@ -269,6 +285,18 @@ main figcaption {
 .codehilite pre {
   padding: 1rem;
   overflow: scroll;
+}
+
+iframe {
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+}
+
+#content hr, #content figure, #content ol, #content ul {
+  margin: unset;
+}
+#content ol, #content ul {
+  padding-left: 1rem;
 }
 
 footer {
