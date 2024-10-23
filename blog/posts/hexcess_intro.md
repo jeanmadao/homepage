@@ -13,7 +13,7 @@ participating in some CTF and I needed to modify some file signatures to be
 able to open the file.
  
 <figure>
-    <img src="/static/assets/hexcess.gif" alt="hexcess screenshot" />
+    <img src="/static/assets/hexcess.gif" alt="hexcess gif" />
     <figcaption><small>A little demo of Hexcess!</small></figcaption>
 </figure>
 
