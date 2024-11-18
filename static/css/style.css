@@ -85,6 +85,13 @@ ol, ul {
   padding-left: 1rem;
 }
 
+code {
+    background-color: #282828;
+    padding: 1px;
+    border-radius: 4px;
+    color: #fe8019;
+}
+
 nav {
   background-color: #1d2021;
   color: #ebdbb2;
