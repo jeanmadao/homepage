@@ -13,8 +13,8 @@
       <a href="{{ url_for('post', name=post.path.replace('posts/', '')) }}"
          hx-target="main"
          hx-select="main"
-         hx-swap="outerHTML show:window:top"
-      >{{ post.title }}</a>
+         hx-swap="outerHTML show:window:top">
+      {{ post.title }}</a>
     </li>
   {% endfor %}
   </ul>
