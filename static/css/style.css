@@ -295,8 +295,13 @@ iframe {
 #content hr, #content figure, #content ol, #content ul {
   margin: unset;
 }
-#content ol, #content ul {
-  padding-left: 1rem;
+
+blockquote {
+  background-color: #32302f;
+  border-radius: 10px;
+  padding: 1rem;
+  margin: 1rem;
+  font-style: italic;
 }
 
 footer {
