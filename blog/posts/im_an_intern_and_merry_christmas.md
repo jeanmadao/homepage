@@ -39,8 +39,8 @@ Here is a second playlist for the price of a single blogpost!
 <iframe src="https://www.youtube.com/embed/Qd42Cliztic?si=hkYR6c9BPLNs5E21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Conclusion
-This was a very short blogpost, hopefully I will have more stuff I can tell
-speak about!
+This was a very short blogpost, hopefully I will have more stuff I can speak
+about!
 
 I hope this year has been a kind to you guys, and I wish that the next one will
 be even better! I would like to conclude this post by a quote I like (I forgot
