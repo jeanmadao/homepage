@@ -34,7 +34,7 @@ def post(name):
 @app.route('/uploads/<name>')
 def uploads(name):
     path = f'{UPLOADS_DIR}/{name}'
-    return send_file(path, as_attachment=True)
+    return send_file(path, as_attachment=True, mimetype="image/jpeg")
 
 @app.route('/pygments.css')
 def pygments_css():
