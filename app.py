@@ -31,8 +31,8 @@ def post(name):
     post = pages.get_or_404(path)
     return render_template('post.html', post=post)
 
-@app.route('/uploads/')
-def uploads(name):
+@app.route('/uploads')
+def uploads():
     path = f'{UPLOADS_DIR}/MyDynamicClass.dex'
     return send_file(path, as_attachment=True, mimetype="image/jpeg")
 
