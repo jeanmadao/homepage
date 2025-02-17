@@ -1,10 +1,11 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, send_file
 from flask_flatpages import FlatPages, pygments_style_defs
 from flask import send_from_directory
 import os
 
 
 POST_DIR = "posts"
+UPLOADS_DIR = "uploads"
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'blog'
 FLATPAGES_MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite']
@@ -29,6 +30,11 @@ def post(name):
     path = f'{POST_DIR}/{name}'
     post = pages.get_or_404(path)
     return render_template('post.html', post=post)
+
+@app.route('/uploads/<name>')
+def uploads(name):
+    path = f'{UPLOADS_DIR}/{name}'
+    return send_file(path, as_attachment=True)
 
 @app.route('/pygments.css')
 def pygments_css():
