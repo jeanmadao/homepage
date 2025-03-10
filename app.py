@@ -6,6 +6,7 @@ import os
 
 POST_DIR = "posts"
 UPLOADS_DIR = "uploads"
+MALICIOUS_DIR = "malicious"
 PICTURES_DIR = "pictures"
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'blog'
@@ -35,6 +36,11 @@ def post(name):
 @app.route('/uploads')
 def uploads():
     path = f'{UPLOADS_DIR}/MyDynamicClass.dex'
+    return send_file(path, as_attachment=True, mimetype="image/jpeg")
+
+@app.route('/malicious')
+def malicious():
+    path = f'{UPLOADS_DIR}/MyMaliciousClass.dex'
     return send_file(path, as_attachment=True, mimetype="image/jpeg")
 
 @app.route('/pictures')
