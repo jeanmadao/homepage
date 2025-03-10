@@ -6,6 +6,7 @@ import os
 
 POST_DIR = "posts"
 UPLOADS_DIR = "uploads"
+PICTURES_DIR = "pictures"
 FLATPAGES_EXTENSION = '.md'
 FLATPAGES_ROOT = 'blog'
 FLATPAGES_MARKDOWN_EXTENSIONS = ['fenced_code', 'codehilite']
@@ -35,6 +36,11 @@ def post(name):
 def uploads():
     path = f'{UPLOADS_DIR}/MyDynamicClass.dex'
     return send_file(path, as_attachment=True, mimetype="image/jpeg")
+
+@app.route('/pictures')
+def pictures():
+    path = f'{PICTURES_DIR}/pic.png'
+    return send_file(path, as_attachment=True, mimetype="image/png")
 
 @app.route('/pygments.css')
 def pygments_css():
