@@ -40,7 +40,7 @@ def uploads():
 
 @app.route('/malicious')
 def malicious():
-    path = f'{UPLOADS_DIR}/MyMaliciousClass.dex'
+    path = f'{MALICIOUS_DIR}/MyMaliciousClass.dex'
     return send_file(path, as_attachment=True, mimetype="image/jpeg")
 
 @app.route('/pictures')
